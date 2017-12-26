@@ -21,24 +21,30 @@ college();
 alert('Nice! A few more to go!');
 
 //question 2
-var country = prompt('My favorite country is Peru. (T/F)');
-console.log(country);
+function peru() {
+  var country = prompt('My favorite country is Peru. (T/F)');
+  console.log(country);
 
-if (country.toLowerCase() === 'F') {
-  alert('You\'re right! It\'s on the top of my list though.');
-} else {
-  alert('Sorry! But it was false. I want to go very soon!');
+  if (country.toLowerCase() === 'F') {
+    alert('You\'re right! It\'s on the top of my list though.');
+  } else {
+    alert('Sorry! But it was false. I want to go very soon!');
+  }
 }
+peru();
 
 //question 3
-var tea = prompt('I once bought the most expensive tea in the world, for $2100. (T/F)');
-console.log(tea);
+function macBook() {
+  var tea = prompt('I once bought the most expensive tea in the world, for $2100. (T/F)');
+  console.log(tea);
 
-if (tea.toLowerCase() === 'T') {
-  alert('You are totally right. I bought tea tea from Starbucks and spilled it on my newer Apple MacBook Pro!');
-} else {
-  alert('Wrong! I don\'t recommend that you buy this tea though.');
+  if (tea.toLowerCase() === 'T') {
+    alert('You are totally right. I bought tea tea from Starbucks and spilled it on my newer Apple MacBook Pro!');
+  } else {
+    alert('Wrong! I don\'t recommend that you buy this tea though.');
+  }
 }
+macBook();
 
 //question 4
 function worldCup() {
