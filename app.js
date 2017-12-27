@@ -14,6 +14,7 @@ function countTries(){
 
     if (major.toLowerCase() === 'F') {
       alert('You are correct! But I didn\'t like biology.');
+      correct++;
     } else {
       alert('I know! It\'s a little hard to see that I would try something that ambitious!');
     };
@@ -29,6 +30,7 @@ function countTries(){
 
     if (country.toLowerCase() === 'F') {
       alert('You\'re right! It\'s on the top of my list though.');
+      correct++;
     } else {
       alert('Sorry! But it was false. I want to go very soon!');
     }
@@ -42,6 +44,7 @@ function countTries(){
 
     if (tea.toLowerCase() === 'T') {
       alert('You are totally right. I bought tea tea from Starbucks and spilled it on my newer Apple MacBook Pro!');
+      correct++;
     } else {
       alert('Wrong! I don\'t recommend that you buy this tea though.');
     }
@@ -55,6 +58,7 @@ function countTries(){
 
     if (brazil.toLowerCase() === 'T') {
       alert('Yes! It was the most magical experience of my existence.');
+      correct++;
     } else {
       alert('It does sound a little crazy huh? But it actually did happen.');
     }
@@ -70,6 +74,7 @@ function countTries(){
 
     if (family.toLowerCase() === 'T') {
       alert('You\'re definitely right! Dad has 11 kids, mom has 6, and I grew up with 4 that I call brothers and sisters.');
+      correct++;
     } else {
       alert('If only I were that lucky. But we\'re a very loving and supportive family though');
     }
@@ -91,6 +96,7 @@ function countTries(){
 
       if (number === 6) {
         alert('You\'re right! NY, WA, MO, OK, MN, and VA!');
+        correct++;
         break;
       } else if(number < 6) {
         alert('Been to more places than that!');
@@ -110,11 +116,12 @@ function countTries(){
     }
   };
   q6();
-  
+
 //question 7
   function q7() {
     var hobbies = ['snowboarding', 'basketball', 'soccer', 'hiking', 'coding'];
     var answer = prompt('What do you think my favorite hobbies are?');
+
     for (var i = 0; i < 5; i++) {
       console.log('guess at each iteration', answer);
 
@@ -123,13 +130,15 @@ function countTries(){
         flag = true;
         break;
         correct++,
-      } else if (!flag){
-        alert('Sorry, but you\'re wrong!!');
+      } else {
+        alert('Wrong! Keep trying!');
+        answer = prompt('What do you tihnk my favorite hobbies are?');
       }
+
     }
+    if(!flag) {
+      alert('Sorry, but you\'re wrong!!');
   }
-
-
-
+}
 }
 countTries();
