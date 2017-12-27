@@ -2,10 +2,25 @@ body {
   background-color: #fff8dc;
   color: #4169E1;
   margin-left: 30px;
+  width: 960px;
 }
  h1 {
    text-align: center;
+   color: #5A0B0B;
  }
- h2 {
+ #center {
    text-align: center;
+   color: #3D46B2;
  }
+
+ #left {
+   color: #3D46B2;
+ }
+
+#first-beach {
+  display: inline-block;
+}
+
+#second-beach {
+  display: inline-block;
+}
